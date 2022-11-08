@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+
+{% block css %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='news.css') }}">
+
+{% endblock %}
+
+{% block content %}
+    
+<h1 style="margin-left: 600px; line-height: 50px; margin-top: 30px;">Xəbərlər</h1>
+
+<div style="display: block; height: auto;">
+  
+  <div class="row" id="news_main_page" style="margin-top: 50px;">
+    {% for a in user.items %}
+    <div class="border border-secondary rounded" id="news_table">
+      <div style="height: 90px;"><p class="news_p"><b>{{ a.title }}</b></p></div>
+      
+
+      <div class="row">
+        <div class="col-sm-6" style="display: flex;">
+          <a href="/newsall/{{a.id}}" class="aaa" style="margin-top: 10px; margin-left: 30px; text-decoration: none;">Daha ətraflı</a>
+          <div style="margin-left: 5px;" class="rig"><i class="fal fa-long-arrow-right fa-2x" style="color: rgb(0, 132, 255); margin-top: 5px;" ></i></div>
+          
+        </div>
+        <div class="col-sm-6" style="margin-top: 20px;">
+          <span style="font-size: 15px;">{{ a.created_at.strftime('%d %B %Y')  }}</span>
+        </div>
+      </div>
+      
+
+    </div>
+    {% endfor %}
+  
+
+
+
+
+
+
+  </div>
+  
+</div>
+
+
+
+
+
+<div style="display: block;"> 
+  <a href="/news/next" class="all" id="all_news" style="margin-bottom: 20px; margin-left: 650px;"><b>Daha çox</b></a>
+</div>
+
+
+
+ 
+    
+{% endblock %}

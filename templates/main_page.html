@@ -1,0 +1,485 @@
+{% extends 'base.html' %}
+
+
+{% block css %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main_page.css') }}">
+
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="container-fluid">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" style="left: 800px;">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" style="background-color: #ffc628;">
+        <div class="carousel-item active">
+          <div class="row">
+            <div id="carousel_left_side" class="col-lg-7" style="background-color: #ffc628; transform: skew(-14deg
+            , 0); z-index: 1; right: -10.3%;">
+              <h1 class="slide_h1" style="transform: skew(14deg
+              , 0);">Banka gəlmədən</h1>
+              <p class="slide_p" style="transform: skew(14deg
+              , 0);">Tam onlayn kredit</p>
+              <div class="col-sm-6">
+                <a href="" class="ab" style="margin-top: 60px; text-decoration: none; font-size: 23px; transform: skew(14deg
+                , 0);"><b>Daha ətraflı</b></a>
+                <i class="fal fa-long-arrow-right fa-2x" style="transform: skew(14deg
+                , 0);"></i>
+              </div>
+            </div>
+            <div class="col-lg-5" style="padding-left: 0;">
+              <img src="https://www.yelo.az/site/assets/files/6973/onlayn_kredit-saytcover.png" class="d-block w-100" alt="...">
+
+            </div>
+          </div>
+          
+          
+          <!-- <div class="carousel-caption d-none d-md-block">
+            
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-7" style="background-color: #ffc628; transform: skew(-14deg
+            , 0); width: 150%; z-index: 1; right: -10.3%;">
+              <h1 class="slide_h1" style="transform: skew(14deg
+              , 0);">Qış nağılı deyil</h1>
+              <p class="slide_p" style="transform: skew(14deg
+              , 0);">İstehlak kreditidir</p>
+              <div class="row"> 
+                <div class="col-sm-6">
+                  <a class="btn btn-dark" href="#" role="button" id="slide_button" ><b>Sifariş et</b></a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="" class="ab" style="margin-top: 60px; text-decoration: none; font-size: 23px; transform: skew(14deg
+                  , 0);"><b>Daha ətraflı</b></a>
+                  <i class="fal fa-long-arrow-right fa-2x" style="transform: skew(14deg
+                  , 0);"></i>
+                </div>
+              </div>
+              
+        
+              
+            </div>
+            <div class="col-lg-5" style="padding-left: 0;">
+              <img src="https://www.yelo.az/site/assets/files/6252/14_kredit_-_qis_2021_-_sayt_cover-1.png" class="d-block w-100" alt="...">
+
+            </div>
+
+          </div>
+          
+          <!-- <div class="carousel-caption d-none d-md-block">
+            
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-7" style="background-color: #ffc628; transform: skew(-14deg
+            , 0); z-index: 1; right: -10.3%;">
+              <h1 class="slide_h1" style="transform: skew(14deg
+              , 0);">Ad günü hədiyyəsi</h1>
+              <p class="slide_p" style="transform: skew(14deg
+              , 0);">Endirimli və komissiyasız kredit</p>
+              <div class="row"> 
+                <div class="col-sm-6">
+                  <a class="btn btn-dark" href="#" role="button" id="slide_button"><b>Sifariş et</b></a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="" class="ab" style="margin-top: 60px; text-decoration: none; font-size: 23px; transform: skew(14deg
+              , 0);"><b>Daha ətraflı</b></a>
+                  <i class="fal fa-long-arrow-right fa-2x" style="transform: skew(14deg
+                  , 0);"></i>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-5" style="padding-left: 0;">
+              <img src="https://www.yelo.az/site/assets/files/3712/birthday_-_karusel_2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+          </div>
+          
+          <!-- <div class="carousel-caption d-none d-md-block">
+            
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-7" style="background-color: #ffc628; transform: skew(-14deg
+            , 0); z-index: 1; right: -10.3%;">
+              <h1 class="slide_h1" style="transform: skew(14deg
+              , 0);">Baxışını dəyiş</h1>
+              <div class="row" style="margin-top: 60px;"> 
+                <div class="col-sm-6">
+                  <a class="btn btn-dark" href="#" role="button" id="slide_button"><b>Kart sifarişi</b></a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="" class="ab" style="margin-top: 60px; text-decoration: none; font-size: 23px; transform: skew(14deg
+                  , 0);"><b>Daha ətraflı</b></a>
+                  <i class="fal fa-long-arrow-right fa-2x" style="transform: skew(14deg
+                  , 0);"></i>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-lg-5" style="padding-left: 0;">
+              <img src="https://www.yelo.az/site/assets/files/3125/1.png" class="d-block w-100" alt="..." >
+            </div>
+
+          </div>
+        
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-7" style="background-color: #ffc628; transform: skew(-14deg
+            , 0); z-index: 1; right: -10.3%;">
+              <h1 class="slide_h1" style="transform: skew(14deg
+              , 0);">Krediti cəmi 7 dəqiqəyə al</h1>
+              <p class="slide_p" style="transform: skew(14deg
+              , 0);">Onlayn sifariş et, filiala gəlmə</p>
+              <a class="btn btn-dark" href="#" role="button" id="slide_button"><b>Sifariş et</b></a>
+
+            </div>
+            <div class="col-lg-5" style="padding-left: 0;">
+              <img src="https://www.yelo.az/site/assets/files/2502/yelo_az_-_7_deqiqe-aze_1.jpg" class="d-block w-100" alt="...">
+            </div>
+
+          </div>
+          
+          <!-- <div class="carousel-caption d-none d-md-block">
+            
+          </div> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+    
+  </div>
+
+  <div class="story_div">
+    <div style="margin-bottom: 15px;">
+      <b style="font-size: 22px;">Storilər</b>
+      <span class="counter">3</span>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card bg-primary text-white" id="card_border" style="height: 170px;">
+          <div class="card-img-overlay" id="story_left">
+            <a href="#" class="btn btn-light text-primary rounded-pill">Kredit</a>
+            <p class="card-text">Xərclərini təxirə salma, hər zaman dəstək üçün Yelo Bank var</p>
+            
+          </div>
+          <div>
+            <img src="https://www.yelo.az/site/assets/files/2102/story-kredit.png" class="card-img" alt="..." id="story_image" style="margin-top: 4px;">
+          </div>
+          
+          
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <div class="card bg-danger text-white" id="card_border">
+          <div class="card-img-overlay" id="story_left">
+            <a href="#" class="btn btn-light text-danger rounded-pill">Cashback<a/a>
+            <p class="card-text">600-dən çox partnyoru özündə birləşdirən Cashback proqramı</p>
+            
+          </div>
+          <div>
+            <img src="https://www.yelo.az/site/assets/files/2145/stories-6.png" class="card-img" alt="..." id="story_image">
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card bg-success text-white" id="card_border">
+          <div class="card-img-overlay" id="story_left">
+            <a href="#" class="btn btn-light text-success rounded-pill">Yelo Kart<a/a>
+            <p class="card-text">Yelo Kart hər əməliyyatda rahatlıq anlayışını dəyişəcək</p>
+            
+          </div>
+          <div>
+            <img src="https://www.yelo.az/site/assets/files/2103/stories-5-pic.png" class="card-img" alt="..." id="story_image">
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="after_story"> 
+    <div class="col-md-5point5 border rounded" style="background-color: #F3F1F7; width: 48%;">
+      <div class="row" id="divDiv">
+        <div class="col-sm-6">
+          <h4 class="Title_plus">Yelo Light</h4>
+          <span class="Title_plus" style="font-size: 14px; width: 100%; color: gray;">İstənilən ödənişlər üçün doğru seçim</span>
+          <div class="row" style=" margin-top: 20px; ">
+            <div class="col-sm-6" style="height: 70px;">
+              <span style="color: gray; font-size: 14px; margin-left: 20px;">Qalığa gəlir</span>
+              <h4 style="font-size: 20px; margin-left: 20px;">5%</h4>
+
+            </div>
+            <div class="col-sm-6">
+              <span style="color: gray; font-size: 14px;">Cashback</span>
+              <h4 style="font-size: 20px;">30%-dək</h4>
+
+            </div>
+          </div>
+          <div>
+            <button type="button" class="btn btn-warning text-body" style="margin-left: 70px; width: 190px; height: 50px;" id="orderCredit"><b>Sifariş et</b></button>
+          </div>
+        </div>
+        <div class="col-sm-6" id="cardDiv">
+          <img src="https://www.yelo.az/site/assets/files/1928/55.png" alt="" id="yelo_card">
+        </div>
+        
+
+      </div>
+
+    </div>
+    <div class="col-md-0point5" style="width: 2%;">
+
+    </div>
+    <div class="col-md-6 border rounded" id="calculator" style="border: solid 1px lightgray; width: 50%;">
+      <div class="row" id="top_of_calculator" style="margin-left: 20px; margin-top: 20px;">
+        <div class="col-sm-5">
+          <b>Kredit kalkulyatoru</b>
+        </div>
+        <div class="col-sm-2 form-group">
+          
+        </div>
+        <div class="col-sm-5">
+          <b class="aa">Daha ətraflı</b>
+          <i class="fal fa-long-arrow-right fa-2x" style="color: rgb(0, 132, 255);"></i>
+        </div>
+        <div class="row rounded" id="calculator_operations" style="border: solid 1px lightgray; margin: 30px; width: 450px;">
+          <div class="col-sm-4" id="slider1">
+            <label for="formControlRange" style="font-size: smaller;" class="text-muted">Aylıq əmək haqqı</label>
+            <span id="rangeval"><b class="dom"></b></span><span style="margin-left: 35px;" class="text-muted">AZN</span>
+            <input name="salary" type="range" value="7500" class="form-control-range ww" min="350" max="14950" step="100" id="formControlRange_salary" style="background-color: #ffc629; 
+            -webkit-appearance: none; height: 5px; margin-top: 12px;">
+          
+          </div>
+          <div class="col-sm-4 border-left" id="slider2">
+            <label for="formControlRange" style="font-size: smaller;" class="text-muted">Məbləğ</label>
+            <br>
+            <span id="rangeval"><b class="dom"></b></span><span style="margin-left: 35px;" class="text-muted">AZN</span>
+            <input name="salary" type="range" value="15000" class="form-control-range ww" min="300" max="30000" step="100" id="formControlRange_loan" style="background-color: #ffc629; 
+            -webkit-appearance: none; height: 5px; margin-top: 12px;">
+
+          </div>
+          <div class="col-sm-4 border-left" id="slider3">
+            <label for="formControlRange" style="font-size: smaller;" class="text-muted">Müddət</label>
+            <br>
+            <span id="rangeval"><b class="dom"></b></span><span style="margin-left: 75px;" class="text-muted">Ay</span>
+            <input name="salary" type="range" value="12" class="form-control-range ww" min="6" max="48" step="1" id="formControlRange_month" style="background-color: #ffc629; 
+            -webkit-appearance: none; height: 5px; margin-top: 12px;">
+
+          </div>
+
+        </div>
+        <div class="row" style="margin-left: 100px; margin-top: 30px; margin-bottom: 20px;">
+          <div class="col-sm-5">
+            <span class="text-muted">Aylıq ödəniş</span>
+            <span><b id="payment">1346.81 AZN</b></span>
+          </div>
+          <div class="col-sm-7">
+            <button type="button" class="btn btn-warning text-body" style="margin-left: 50px;" id="orderCredit"><b>Kredit sifarişi</b></button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div style="margin-left: 160px; margin-top: 50px; margin-bottom: -30px;">
+    <b style="font-size: 22px;">Sizin üçün faydalı</b>
+    
+
+  </div>
+
+  <div>
+    <div class="row" id="mob_app_currency">
+      <div class="col-sm-7 rounded" style="padding-left: 20px; border: solid 1px lightgray; width: 500px;">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>YeloBank App</h3>
+            <p>Yelo-dan yeni və parlaq mobil əlavə. Hesablarını izlə, köçürmə və ödənişlərini sürətli et.</p>
+            <ul class="ul_icon">
+              <li>
+                <a href="" ></a>
+                  <div class="image_apple">
+                    <span class="app_sp">Yüklə</span>
+                    <p class="app_p">App Store</p>
+                  </div>
+              </li>
+              <li>
+                <a href=""></a>
+                <div class="google_play">
+                  <span class="app_sp">Yüklə</span>
+                  <p class="app_p">Google Play</p>
+                </div>
+              </li>
+              <li>
+                <a href=""></a>
+                <div class="appgallery">
+                  <span class="app_sp">Yüklə</span>
+                  <p class="app_p">App Gallery</p>
+                </div>
+              </li>
+            </ul>
+          
+          </div>
+          <div class="col-sm-6" style="background-image: url(https://www.yelo.az/site/templates/style/img/app_phone.png); height: 410px;">
+            <img src="https://www.yelo.az/site/assets/files/1752/screen_app.jpg" class="card-img" alt="..." id="app_image">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+
+      </div>
+      <div class="col_content exchange_rate col-sm-4 rounded" style="padding-left: 20px; border: solid 1px lightgray;">
+        <div class="cc_title row" style="margin-top: 20px;">
+          <div class="col-sm-8">
+            <b>Valyuta məzənnələri</b>
+          </div>
+          
+          <div class="change_rates col-sm-4">
+            <a href="javascript:void(0)" class="active_lang open_select">Nağd</a>
+            <div class="select_box">
+              <div class="select_content">
+                <ul style="list-style: none;">
+                  <li>
+                    <a data-cash='1' href="#" class="active"></a>
+                  </li>
+                  <li>
+                    <a data-cash='0' href="#"></a>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="calculator" style="display: block;">
+          <div class="c_line">
+            <input type="text" placeholder="0.00" value="100" class="c_int input_value" style="border: none;">
+            <select name="from" class="s_curr" style="outline: none; box-sizing: border-box; appearance: none; border: none;">
+              <option value="azn" style="background: transparent;" selected>AZN</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+
+            </select>
+
+          </div>
+          <div class="c_line">
+            <div class="c_int input_result">58.74</div>
+            <select name="to" class="s_curr" style="outline: none; box-sizing: border-box; appearance: none; border: none;">
+              <option value="azn" style="display: none;">AZN</option>
+              <option value="usd" selected>USD</option>
+              <option value="eur">EUR</option>
+
+            </select>
+
+          </div>
+          <div class="c_result" style="display: flex; margin-top: 30px; margin-bottom: 30px;">
+            <div class="cr_item">
+              <p>Valyuta</p>
+              <b class="cr_item_curr table_rate" data-curr='usd' style="display: block;">USD</b>
+              <b class="cr_item_curr table_rate" data-curr='eur' style="display: block;">EUR</b>
+
+            </div>
+            <div class="cr_item">
+              <p>Alış</p>
+              <b class="cr_item_buy table_buy_rate" data-curr="usd" data-cash="1.7000" data-nocash='1.7000' style="display: block;">1.7000</b>
+              <b class="cr_item_buy table_buy_rate" data-curr="eur" data-cash="1.8700" data-nocash='1.8700' style="display: block;">1.8700</b>
+            </div>
+            <div class="cr_item">
+              <p>Satış</p>
+              <b class="cr_item_sell table_sell_rate" data-curr="usd" data-cash="1.7025" data-nocash="1.7025" style="display: block;">1.7025</b>
+              <b class="cr_item_sell table_sell_rate" data-curr="eur" data-cash="1.9800" data-nocash="1.9800" style="display: block;">1.9800</b>
+            </div>
+
+          </div>
+          <p class="info_p">Region filiallarında məzənnələr fərqli ola bilər</p>
+          <a href="" class="all_exchanges" style="text-decoration: none;">Bütün məzənnələr</a>
+
+        </div>
+        
+         
+        
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+
+
+  
+  <div style="margin-left: 160px; margin-top: 30px;">
+    <b style="font-size: 22px;">Son xəbərlər</b>
+    
+
+  </div>
+  <div id="news_main_page">
+    {% for a in user.items %}
+    <div class="border border-secondary rounded" id="news_table">
+      <div style="height: 90px;"><p class="news_p"><b>{{ a.title }}</b></p></div>
+      
+
+      <div class="row">
+        <div class="col-sm-6" style="display: flex;">
+          <a href="/newsall/{{a.id}}" class="aaa" style="margin-top: 10px; margin-left: 40px; text-decoration: none;">Daha ətraflı</a>
+          <div style="margin-left: 5px;" class="rig"><i class="fal fa-long-arrow-right fa-2x" style="color: rgb(0, 132, 255); margin-top: 5px;" ></i></div>
+          
+        </div>
+        <div class="col-sm-6" style="margin-top: 20px;">
+          <span style="font-size: 15px;">{{ a.created_at.strftime('%d %B %Y')  }}</span>
+        </div>
+      </div>
+
+    </div>
+
+    {% endfor %}
+    
+    
+
+  </div>
+
+
+  
+
+{% endblock %}
+
+{% block javascript %}
+    <script src="{{ url_for('static', filename='main_page.js') }}"></script>
+    <script src="{{ url_for('static', filename='main_two.js') }}"></script>
+{% endblock %}
+
+
+
+

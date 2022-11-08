@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+.modal{
+      display: none;
+      height: 122px;
+      
+    
+    }
+
+.modal.show-modal{
+    background-color: white;
+    display: block;
+  
+
+}
+.modal input{
+    height: 70px;
+    width: 54%;
+    border: none;
+    /* margin-top: 20px; */
+    margin-left: 400px;
+    margin-bottom: 40px;
+    margin-top: 19px;
+}
+.modal button{
+    margin-left: 18px;
+    /* background-image: url(https://www.yelo.az/site/templates/style/img/search_header.svg); */
+    background-repeat: no-repeat;
+    /* height: 200px;
+    width: 200px; */
+    background-color: white;
+    background-size: auto;
+
+
+
+}
+.modal  i{
+    width: 49px;
+height: 39px;
+color: rgba(64, 53, 53, 0.44);
+}
+
+.modal i:hover{
+    cursor: pointer;
+}
+    
+    header{
+    font-family:sans-serif;
+    }
+    #navbar1{
+    height: 45px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ECECEC;
+    }
+    .navbar-nav .nav-link{
+    font-size:13px;
+    }
+    /* .nav-link i{
+    padding-right: 4px;
+    } */
+    .nav-item{
+    padding: 0px 0px;
+    margin: 0 7px;
+    }
+    .nav-item:hover{
+    border-bottom: 2px solid #FFC628; 
+    }
+    .nav-item2{
+    padding: 0px 7px;
+    }
+    #logo {
+    display: block;
+    width: 144px;
+    height: 36px;
+    background: url(https://www.yelo.az/site/templates/style/img/logo.svg) no-repeat center;
+    }
+    .navbar-brand{
+    padding: -1px 10px;
+    font-size: 15px;
+    padding-right: 7px;
+    padding-top: 8px;
+    font-weight:600;
+    font-family: 'm';
+    }
+    .navbar-brand:hover{
+    border-bottom: 2px solid black;
+    }
+    #buttonbank{
+    height: 55px;
+    width: 170px;
+    margin-right: 13px;
+    border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    #buttonbank:hover{
+    background-color: black;
+    color: white;
+    
+    }
+    /* #buttonbank:hover #free{
+    display: none;
+    transition: 0.3s;
+    } */
+    #section1{
+    margin-left: 230px;
+    }
+    #categorybutton{
+    width: 55px;
+    }
+
+    .ex{
+        position: fixed;
+        /* top: 0; */
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        padding: 2px 100px;
+        z-index: 1;
+        }
+        .ex.sticky #free{
+        display: none;
+        /* transition: 0.3s; */
+        }
+        .ex.sticky #buttonbank{
+        width: 60px;
+        transition: 0.2s;
+        }
+        .ex #free{
+        display: inline;
+        
+        }
+        .ex.sticky{
+        top: 0;
+        padding:5px 100px;
+        background: white;
+        border-bottom: 1px solid transparent;
+        }
+    
+
+
+
+
+
+        #sectionicon{
+            position: fixed;
+            right:15px;
+            top: 880px;;
+        }
+        #oneicon{
+            height: 100vh;
+        }
+        
+        .aclass{
+            height:59px;
+            width: 59px;
+            background-color:rgb(255, 198, 40) ;
+            border-radius: 50px;
+            text-align: center;
+            margin: 0;
+            line-height: 68px;
+        
+        }
+        .aclass i{
+            font-size: 26px;
+            color: white;
+            
+        }
+        .aclass:hover i{
+            transform: scale(1.4);
+        }

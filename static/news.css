@@ -1,0 +1,150 @@
+#news_main_page {
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 10px;
+    /* height: 200px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+#news_table {
+    
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+.news_p {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 60px;
+    text-align: left;
+    color: black;
+}
+
+#all_news {
+    display: inline-block;
+    width: auto;
+    height: 48px;
+    padding: 0 54px 0 20px;
+    line-height: 50px;
+    font-family: 'b';
+    box-shadow: inset 0 0 0 1px #0091fe;
+    border-radius: 6px;
+    margin-top: 40px;
+    margin-left: -830px;
+}
+.aa {
+    background: url(https://www.yelo.az/site/templates/style/img/blue_arr.svg) no-repeat right 9px;
+    display: inline-block;
+    font-family: 'b';
+    padding: 5px 38px 5px 0;
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+
+.all {
+    border-top: 1px solid #ECECEC;
+    display: block;
+    margin: 15px -60px 0px -5px;
+    padding: 12px 185px 19px 69px;
+    font-family: 'b';
+    background: url(https://www.yelo.az/site/templates/style/img/blue_arr.svg) no-repeat 91% 21px;
+    text-decoration: none;
+    
+}
+
+.all:hover {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    text-decoration: none;
+}
+#footer {
+    margin-top: 20px;
+    margin-left: 155px;
+    margin-right: 155px;
+    
+  }
+  
+  
+
+  .icon_div {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #F3F1F7;
+}
+
+  #face {
+    
+    color: gray;
+    margin-top: 11px;
+  }
+
+  #twitter {
+       color: gray;
+       margin-top: 11px;
+  }
+  #instagram {
+    color: gray;
+    margin-top: 11px;
+    background-color: lightgray;
+  }
+  #in {
+       color:gray;
+       margin-top: 11px;
+  }
+  #ytb {
+       color: gray;
+       margin-top: 11px;
+  }
+
+  .logo {
+    width: 344px;
+    height: 36px;
+    display: inline-block;
+    margin: 0 0 10px 370px;
+    background: url(https://www.yelo.az/site/templates/style/img/logo.svg) no-repeat center;
+  }
+
+
+  .card-body {
+       width: 100%;
+  }
+
+  .ul_footer {
+       list-style: none;
+       margin-left: 150px;
+  }
+
+  .card-body li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .card-body li p {
+    color: rgba(0,0,0,0.5);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .author {
+    background: url(https://www.yelo.az/site/templates/style/img/jis.svg) no-repeat 0px 3px;
+    background-size: 16px;
+    padding: 0 0 0 22px;
+    display: inline-block;
+    margin: 0 0 0 9px;
+    vertical-align: middle;
+    color: rgba(0,0,0,0.5);
+    text-decoration: underline;
+  }
+
+    .aaa:hover + .rig i {
+    margin-left: 5px;
+}
